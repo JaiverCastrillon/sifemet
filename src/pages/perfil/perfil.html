@@ -1,0 +1,54 @@
+<!--
+  Generated template for the PerfilPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Perfil</ion-title>
+
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+      <ion-icon name="contact"></ion-icon>
+    </button>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <img src="../../assets/imgs/perfil.png"/>
+    <ion-card-content>
+        <ion-fab right top>
+            <button ion-fab (click)="cargarImagen()">
+              <ion-icon name="create"></ion-icon>
+            </button>
+        </ion-fab>
+
+        <ion-list>
+
+            <ion-item>
+              <ion-label fixed>Nombre</ion-label>
+              <ion-input type="text" value="Pepito"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label fixed>Apellido</ion-label>
+              <ion-input type="text" value="Perez"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label fixed>Organización</ion-label>
+                <ion-input type="text" value="Alcaldía"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <button ion-button>Guardar cambios</button>
+            </ion-item>
+          </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

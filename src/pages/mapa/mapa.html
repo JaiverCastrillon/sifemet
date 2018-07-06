@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar  color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+      <ion-icon name="map"></ion-icon>
+
+
+    </button>
+    <ion-title>SIFEMET</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card>
+        <img src="../../assets/imgs/mapa-caldas.jpg">
+        <div class="card-title">Caldas</div>
+        <div class="card-subtitle">41 Listings</div>
+      </ion-card>
+
+      <button ion-button icon-only outline (click)="prueba()">
+          <ion-icon name="pin"></ion-icon>
+        </button>
+        <div id="map_canvas"></div>
+
+  </ion-content>
